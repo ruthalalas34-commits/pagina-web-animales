@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>El Mundo de los Animales</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    background-color: #2e7d32;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+.botones {
+    margin: 30px;
+}
+
+button {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.contenido {
+    background-color: white;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
+
+.seccion {
+    display: none;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+h2 {
+    color: #2e7d32;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🐾 EL MUNDO DE LOS ANIMALES 🐾</h1>
+
+<div class="botones">
+
+<button onclick="mostrar('mamiferos')">🐶 Mamíferos</button>
+
+<button onclick="mostrar('aves')">🦅 Aves</button>
+
+<button onclick="mostrar('acuaticos')">🐬 Animales Acuáticos</button>
+
+</div>
+
+<div class="contenido">
+
+<!-- PRIMER BOTÓN -->
+<div id="mamiferos" class="seccion">
+
+<h2>🐶 Los Mamíferos</h2>
+
+<img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=600&q=80">
+
+<p>
+Los mamíferos son animales que generalmente tienen pelo
+y alimentan a sus crías con leche.
+</p>
+
+<p>
+Algunos ejemplos de mamíferos son el perro, el gato,
+el león, el elefante y el oso.
+</p>
+
+</div>
+
+
+<!-- SEGUNDO BOTÓN -->
+<div id="aves" class="seccion">
+
+<h2>🦅 Las Aves</h2>
+
+<img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=600&q=80">
+
+<p>
+Las aves son animales que tienen plumas, pico y alas.
+Muchas especies pueden volar.
+</p>
+
+<p>
+Algunos ejemplos son el águila, el loro, el búho,
+el colibrí y el pingüino.
+</p>
+
+</div>
+
+
+<!-- TERCER BOTÓN -->
+<div id="acuaticos" class="seccion">
+
+<h2>🐬 Animales Acuáticos</h2>
+
+<img src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?auto=format&fit=crop&w=600&q=80">
+
+<p>
+Los animales acuáticos viven principalmente en el agua,
+como los mares, océanos, ríos y lagos.
+</p>
+
+<p>
+Algunos ejemplos son el delfín, la ballena, el tiburón,
+la tortuga marina y el pulpo.
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function mostrar(id) {
+
+    var secciones = document.getElementsByClassName("seccion");
+
+    for (var i = 0; i < secciones.length; i++) {
+        secciones[i].style.display = "none";
+    }
+
+    document.getElementById(id).style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
