@@ -1,0 +1,71 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animales</title>
+
+    <style>
+        body {
+            background-color: #dff6ff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #15616d;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e7d32;
+        }
+
+        #informacion {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mis animales favoritos</h1>
+    <p>Presiona un botón para conocer un animal.</p>
+
+    <button onclick="mostrarPerro()">Perro</button>
+    <button onclick="mostrarGato()">Gato</button>
+    <button onclick="mostrarLeon()">León</button>
+
+    <div id="informacion"></div>
+
+    <script>
+        function mostrarPerro() {
+            document.getElementById("informacion").innerHTML =
+            "🐶 El perro es un animal doméstico, fiel y amigable.";
+        }
+
+        function mostrarGato() {
+            document.getElementById("informacion").innerHTML =
+            "🐱 El gato es un animal doméstico, curioso y ágil.";
+        }
+
+        function mostrarLeon() {
+            document.getElementById("informacion").innerHTML =
+            "🦁 El león es un animal salvaje conocido como el rey de la selva.";
+        }
+    </script>
+
+</body>
+</html>
+```
